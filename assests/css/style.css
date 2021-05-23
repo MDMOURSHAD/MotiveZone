@@ -104,10 +104,6 @@ header nav{
 	padding:30px 0px;
 }
 
-.hero-content {
-    height: 120vh;
-}
-
 /*==================*/
 /*-- MAIN MENU --*/
 /*==================*/
@@ -119,4 +115,12 @@ header nav{
 .main-menu ul li a{
 	color:var(--color-1);
 	font-size:var(--fs-3);
+}
+
+/*==================*/
+/*-- HERO SECTION --*/
+/*==================*/
+
+.hero-content {
+    height: 120vh;
 }
