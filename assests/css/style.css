@@ -1,0 +1,124 @@
+
+/*==================*/
+/*-- VARIABLES --*/
+/*==================*/
+
+:root{
+	--color-1:#fff;
+	--color-2:#072753;
+	--color-3:#FF9C00;
+	--fs-1:40px;
+	--fs-2:20px;
+	--fs-3:15px;
+}
+
+/*====================================*/
+/*-- BASIC SETUP --*/
+/*====================================*/
+
+html{
+
+}
+
+body{
+	overflow-x:hidden;
+	font-family: 'Roboto';
+}
+
+*,
+*::after,
+*::before{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+a{
+	text-decoration:none;
+}
+
+a,
+span, 
+label{
+	display:inline-block;
+}
+
+button,
+input, 
+textarea,
+button:focus,
+input:focus,
+textarea:focus{
+	outline:0;
+	border:0;
+}
+
+/*====================================*/
+/*-- REUSABLE COMPONENTS --*/
+/*====================================*/
+
+.heading{
+	font-size:var(--fs-1);
+	font-weight:700;
+	text-transform:capitalize;
+	color:var(--color-2);
+}
+
+.sub-heading{
+	font-size:var(--fs-2);
+	font-weight:500;
+	text-transform:capitalize;
+	color:var(--color-2);
+}
+
+.paragraph{
+	font-size:var(--fs-3);
+	color:var(--color-2);
+	font-weight:400;
+}
+
+.btn{
+	padding:20px 40px;
+	font-weight:700;
+	text-transform:capitalize;
+	background:var(--color-3);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color:var(--color-1);
+	font-size:var(--fs-3);
+}
+
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
+
+header {
+    background: url('../images/Slider.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header nav{
+	padding:30px 0px;
+}
+
+.hero-section {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*==================*/
+/*-- MAIN MENU --*/
+/*==================*/
+
+.main-menu ul li:not(:last-child){
+	margin-right:40px;
+}
+.main-menu ul li a{
+	color:var(--color-1);
+	font-size:var(--fs-3);
+}
