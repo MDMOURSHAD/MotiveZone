@@ -124,3 +124,7 @@ header nav{
 .hero-content {
     height: 120vh;
 }
+
+.hero-img {
+    transform: translate(50px);
+}
