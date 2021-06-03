@@ -1,5 +1,6 @@
 
-@media (max-width: 1930px) { 
+
+@media (max-width: 1399px) {
 
 /*============================*/
 /*-- REUSABLE COMPONENTS --*/
@@ -9,21 +10,211 @@
 /*-- HEADER SECTION CSS --*/
 /*====================================*/
 
+.hero-content {
+	height: 120vh !important;
+}
 
+.hero-text-box .hero-desc {
+    margin-right: 30px;
+}
+
+.hero-img {
+    transform: translate(0px,0px) !important;
+}
 
 }
 
 
-@media (max-width: 1399px) { ... }
+
+@media (max-width: 1199px) {
+
+/*============================*/
+/*-- REUSABLE COMPONENTS --*/
+/*============================*/
+
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
+
+.hero-content {
+    height: 80vh !important;
+}
+
+}
+
+@media (max-width: 991px) {
+
+/*============================*/
+/*-- REUSABLE COMPONENTS --*/
+/*============================*/
+
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
+
+.main-menu{
+	display:none;
+}
+
+.hero-content {
+    height: 70vh !important;
+}
+
+/*==================*/
+/*-- MOBILE MENU --*/
+/*==================*/
+
+.mobile-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.bars-icon {
+    overflow: hidden;
+}
+
+.bars-icon a {
+    color: #fff;
+    font-size: 45px;
+    cursor:pointer;
+}
+
+.mobile-menu .overlay {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0%;
+    overflow: hidden;
+    z-index: 9999;
+    position: fixed;
+    width: 0%;
+    background: #111;
+    transition:.5s ease-in-out;
+    -webkit-transition:.5s ease-in-out;
+    -moz-transition:.5s ease-in-out;
+    -ms-transition:.5s ease-in-out;
+    -o-transition:.5s ease-in-out;
+}
+
+.overlay .close-icon {
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size:40px;
+}
+
+.overlay .close-icon a{
+	color:#ddd;
+}
+
+.mobile-menu-item {
+    margin-top: 40px;
+}
+
+.mobile-menu-item ul li{
+	line-height:50px;
+}
+
+.mobile-menu-item ul li a{
+	color:#ddd;
+	font-size:30px;
+
+}
+
+}
+
+@media (max-width: 767px) {
+
+/*============================*/
+/*-- REUSABLE COMPONENTS --*/
+/*============================*/
+
+.mt-sm-30{
+	margin-top:30px;
+}
+
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
+
+.hero-content {
+    height: auto !important;
+}
+
+.hero-content  .hero-text-box {
+    text-align: center;
+}
+
+.hero-text-box .hero-title {
+    font-size: 40px;
+}
+
+.hero-text-box .hero-desc {
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hero-img {
+    padding-bottom: 130px;
+}
+
+}
+
+@media (max-width: 575.98px) {
+
+/*============================*/
+/*-- REUSABLE COMPONENTS --*/
+/*============================*/
 
 
-@media (max-width: 1199px) { ... }
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
+
+.nav-btn a{
+	padding:16px 20px;
+}
+
+/*==================*/
+/*-- MOBILE MENU --*/
+/*==================*/
+
+.mobile-menu {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.bars-icon a {
+    font-size: 40px;
+}
+
+.overlay .close-icon {
+    font-size: 30px;
+}
+
+.mobile-menu-item ul li {
+    line-height: 40px;
+}
+
+.mobile-menu-item ul li a {
+    font-size: 25px;
+}
 
 
-@media (max-width: 991) { ... }
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
 
 
-@media (max-width: 767) { ... }
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
 
 
-@media (max-width: 575) { ... }
+/*====================================*/
+/*-- HEADER SECTION CSS --*/
+/*====================================*/
+}
+

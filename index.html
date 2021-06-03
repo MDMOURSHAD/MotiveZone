@@ -4,11 +4,13 @@
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,itial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Motive Zone</title>
 	<!-- FONTS -->
 	<link rel="stylesheet" type="text/css" href="assests/fonts/stylesheet.css">
+  <!-- ICONS -->
+  <link rel="stylesheet" type="text/css" href="assests/icons/all.min.css">
 	<!-- CSS HERE -->
 	<link rel="stylesheet" type="text/css" href="assests/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="assests/css/animate.css">
@@ -23,63 +25,380 @@
 
 	<!--============================ START HEADER SECTION ============================
    -->
-   <header>
+  <header id="header">
 
    	<!-- NAV -->
-     <nav>
-     	<div class="container">
-     		<div class="nav-bar d-flex justify-content-between align-items-center">
-     			<!-- LOGO -->
-     			<div class="logo-area">
-     				<a href="#"><img src="assests/images/Logo.jpg" class="d-block"></a>
-     			</div>
-     			<!-- MAIN MENU -->
-     			<div class="main-menu">
-     				<ul>
-     					<li class="d-inline-block capitalize"><a href="#">Home</a></li>
-     					<li class="d-inline-block capitalize"><a href="#">Our Work</a></li>
-     					<li class="d-inline-block capitalize"><a href="#">About US</a></li>
-     					<li class="d-inline-block capitalize"><a href="#">Review</a></li>
-     					<li class="d-inline-block capitalize"><a href="#">Contact US</a></li>
-     				</ul>
-     			</div>
-     			<!-- NAV BTN -->
-     			<div class="nav-btn">
-     				<a href="#" class="btn capitalize">Say Hi</a>
-     			</div>
-     		</div>
-     	</div>
-     </nav>
+      <nav class="nav">
+     	    <div class="container">
+     		     <div class="nav-bar d-flex justify-content-around align-items-center">
+     			      <!-- LOGO -->
+     			      <div class="logo-area">
+     				       <a href="#"><img src="assests/images/Logo.jpg" class="d-block"></a>
+     			      </div>
+     			      <!-- MAIN MENU -->
+     			      <div class="main-menu">
+     				       <ul>
+     					        <li class="d-inline-block capitalize"><a href="index.html">Home</a></li>
+     					        <li class="d-inline-block capitalize"><a href="#service">Our Work</a></li>
+     					        <li class="d-inline-block capitalize"><a href="#about-us">About US</a></li>
+     					        <li class="d-inline-block capitalize"><a href="#review">Review</a></li>
+     					        <li class="d-inline-block capitalize"><a href="#contact-us">Contact US</a></li>
+     				       </ul>
+     			      </div>
+                <!-- MOBILE MENU -->
+                <div class="mobile-menu">
+                    <div class="bars-icon">
+                        <a href="javascript:void(0)" class="d-flex align-items-center" onclick="openNav()"><i class="fas fa-bars"></i></a>
+                    </div>
+                    <div class="overlay" id="mynav">
+                        <div class="close-icon text-end">
+                            <a href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="mobile-menu-item">
+                            <ul>
+                                <li class="d-block capitalize text-center"><a href="index.html" onclick="closeNav()">Home</a></li>
+                                <li class="d-block capitalize text-center"><a href="#service" onclick="closeNav()">Our Work</a></li>
+                                <li class="d-block capitalize text-center"><a href="#about-us" onclick="closeNav()">About US</a></li>
+                                <li class="d-block capitalize text-center"><a href="#review" onclick="closeNav()">Review</a></li>
+                                <li class="d-block capitalize text-center"><a href="#contact-us" onclick="closeNav()">Contact US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+     			      <!-- NAV BTN -->
+     			      <div class="nav-btn">
+     				       <a href="#" class="btn capitalize">Say Hi</a>
+     			      </div>
+     		       </div>
+     	      </div>
+        </nav>
 
      <!-- HERO SECTION -->
-     <div class="hero-section">
-     	<div class="container">
-     		<div class="row">
-     			<div class="hero-content d-flex align-items-center">
-     				<div class="col-xl-2">
+    <div class="hero-section py-100">
+        <div class="container">
+     		   <div class="row">
+     			    <div class="hero-content d-md-flex align-items-md-center">
+     				     <div class="col-xl-1">
      				
-     				</div>
-     				<div class="col-md-6 col-xl-5">
-     					<div class="hero-text-box">
-     						<h1 class="hero-title">We Build Brands That Lead &
-                        	Inspire</h1>
-                        	<p class="hero-desc">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble</p>
-                        	<a href="#" class="btn hero-btn">Read more</a>
-     					</div>
-     				</div>
-     				<div class="col-md-6 col-xl-5">
-     					<div class="hero-img">
-     						<img src="assests/images/hero-img.jpg" alt="hero-img" class="w-100">
-     					</div>
-     				</div>
-     			</div>
-     		</div>
-     	</div>
-     </div>
+     				     </div>
+     				     <div class="col-md-7 col-xl-6 mt-sm-30 wow animated slideInLeft">
+     					      <div class="hero-text-box">
+     						       <h1 class="hero-title capitalize">We Build Brands That Lead &
+                       Inspire</h1>
+                       <p class="hero-desc paragraph">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble</p>
+                       <a href="#" class="btn hero-btn">Read more</a>
+     					      </div>
+     				     </div>
+     				     <div class="col-md-5 col-xl-5 mt-sm-30 wow animated slideInRight">
+     					      <div class="hero-img">
+     						       <img src="assests/images/hero-img.jpg" alt="hero-img" class="w-100">
+     					      </div>
+     				     </div>
+     			    </div>
+     		   </div>
+        </div>
+    </div>
 
-   </header>
+  </header>
 
-   <br>
+  <!--============================ END HEADER SECTION ============================
+   -->
+
+  <!--============================ START SERVICE SECTION ============================
+   -->
+
+   <section class="service-section py-100" id="service">
+      <div class="container">
+          <div class="section-title text-center">
+              <h2 class="capitalize heading">Our Services</h2>
+              <p class="paragraph-1">That are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through</p>
+          </div>
+          <div class="row mt-60">
+              <div class="col-xl-1">
+                
+              </div>
+              <div class="col-xl-3 wow animated slideInLeft">
+                  <div class="service-item">
+                      <span class="icon-circle d-flex align-items-center justify-content-center"><img src="assests/images/web-design.jpg"  alt="graphic-design"></span>
+                      <h3 class="sub-heading capitalize">Web Design</h3>
+                      <p class="paragraph">Shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power.</p>
+                      <a href="#">Learn More <span class="right-arrow"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                  </div>
+              </div>
+              <div class="col-xl-3 wow animated slideInDown">
+                  <div class="service-item">
+                      <span class="icon-circle d-flex align-items-center justify-content-center"><img src="assests/images/vector.jpg"  alt="vector"></span>
+                      <h3 class="sub-heading capitalize">UI/UX Design</h3>
+                      <p class="paragraph">When nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                      <a href="#" class="capitalize" >Learn More <span class="right-arrow"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                  </div>
+              </div>
+              <div class="col-xl-3 wow animated slideInRight">
+                  <div class="service-item">
+                      <span class="icon-circle d-flex align-items-center justify-content-center"><img src="assests/images/graphic-design.jpg"  alt="graphic-design"></span>
+                      <h3 class="sub-heading capitalize">Graphic Design</h3>
+                      <p class="paragraph">But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur.</p>
+                      <a href="#">Learn More <span class="right-arrow"><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                  </div>
+              </div>
+              <div class="col-xl-2">
+                
+              </div>
+          </div>
+      </div>
+   </section>
+
+   <!--============================ END SERVICE SECTION ============================
+   -->
+
+
+   <!--============================ START WE ARE HEAR SECTION ============================
+   -->
+
+   <section class="we-are-hear py-100" id="about-us">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-1">
+                
+              </div> 
+              <div class="col-xl-6 wow animated slideInLeft">
+                  <div class="we-are-hear-text">
+                      <h2 class="heading capitalize">We Are Hear To Help You With</h2>
+                      <p class="d-block paragraph">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer
+
+                      <span class="d-block">Of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself</span></p>
+                  </div>
+              </div>
+              <div class="col-xl-5 wow animated slideInRight">
+                  <div class="we-are-hear-img">
+                      <img src="assests/images/we-are-here-img.jpg" alt="we-are-here-img" class="w-100">
+                  </div>
+              </div>
+          </div>
+      </div>
+   </section>
+
+   <!--============================ END WE ARE HEAR SECTION ============================
+   -->
+
+
+   <!--============================ START WORK WITH US SECTION ============================
+   -->
+
+   <section class="work-with-us py-100">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-5 wow animated slideInLeft">
+                  <div class="work-with-us-img">
+                      <img src="assests/images/work-with-us-img.jpg" alt="work-with-us-img" class="w-100">
+                  </div>
+              </div>
+              <div class="col-xl-6 wow animated slideInRight">
+                  <div class="work-with-us-text">
+                      <h2 class="heading">Interested To Work With Us?</h2>
+                      <p class="paragraph">Because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain 
+
+                      <span class="d-block d-block">Of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure</span></p>
+                      <form class="newslatter-form">
+                        <input type="text" name="text" placeholder="Enter your email address" class="newslatter-form-text">
+                        <input type="submit" value="send" class="newslatter-form-send btn">
+                      </form>
+                  </div>
+              </div>
+              <div class="col-xl-1">
+                 
+              </div>
+          </div>
+      </div>
+   </section>
+
+    <!--============================ END WORK WITH US SECTION ============================
+   -->
+
+
+
+      <!--============================ START PROJECT SECTION ============================
+   -->
+
+   <section class="project-section py-100">
+      <div class="container">
+          <div class="section-title project-title text-center">
+              <h2 class="capitalize heading">Our Latest Project</h2>
+              <p class="paragraph-1">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage But who has any right</p>
+          </div>  
+          <div class="row mt-60 justify-content-evenly">
+              <div class="col-xl-3 g-0 wow animated slideInLeft">
+                  <div class="project-element">
+                      <img src="assests/images/project-1.jpg" class="w-100" alt="project-1.jpg">
+                      <h3 class="sub-heading">Business & corporate</h3>
+                      <p class="paragraph">Find fault with a man who chooses to enjoy a pleasure that has no annoying.</p>
+                      <a href="#" class="capitalize">Learn More <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                  </div>
+              </div>
+              <div class="col-xl-3 g-0 wow animated slideInDown">
+                  <div class="project-element">
+                      <img src="assests/images/project-2.jpg" class="w-100" alt="project-2">
+                      <h3 class="sub-heading">Food & restaurant</h3>
+                      <p class="paragraph">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus.</p>
+                      <a href="#" class="capitalize">Learn More <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                  </div>
+              </div>
+              <div class="col-xl-3 g-0 wow animated slideInRight">
+                  <div class="project-element">
+                      <img src="assests/images/project-3.jpg" class="w-100" alt="project-3">
+                      <h3 class="sub-heading">Travel & tourism</h3>
+                      <p class="paragraph">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
+                      <a href="#" class="capitalize">Learn More <span><i class="fas fa-long-arrow-alt-right"></i></span></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+   </section>
+
+    <!--============================ END PROJECT SECTION ============================
+   -->
+
+
+
+      <!--============================ START TESTIOMONIAL SECTION ============================
+   -->
+
+  <section class="testimonial-section py-100" id="review">
+      <div class="container">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="row justify-content-center">
+                      <div class="col-md-4">
+                          <div class="swiper-slide"> 
+                              <div class="review-person-image">
+                                  <img src="assests/images/review-person.jpg" alt="review-person" class="w-100">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-5 d-flex align-items-center">
+                          <div class="swiper-slide">
+                              <div class="review-person-identity">
+                                  <h3 class="sub-heading">Carla stevens</h3>
+                                  <span class="paragraph capitalize">Technical Director at MotiveZone</span>
+                                  <p class="paragraph">“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying.”</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!--============================ END TESTIOMONIAL SECTION ============================
+   -->
+
+
+         <!--============================ START CLIENTS SECTION ============================
+   -->
+
+   <div class="clients-section">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-2">
+                  <img src="assests/images/client-1.jpg" alt="client-1" class="w-100">
+              </div>
+              <div class="col-md-2">
+                  <img src="assests/images/client-2.jpg" alt="client-2" class="w-100">
+              </div>
+              <div class="col-md-2">
+                  <img src="assests/images/client-3.jpg" alt="client-3" class="w-100">
+              </div>
+              <div class="col-md-2">
+                  <img src="assests/images/client-4.jpg" alt="client-4" class="w-100">
+              </div>
+          </div>  
+      </div>
+   </div>
+    <!--============================ END CLIENTS SECTION ============================
+   -->
+
+   <!--============================ START FOOTER SECTION ============================
+   -->
+  <footer class="footer-section py-100" id="contact-us">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-3">
+                  <div class="footer-desc">
+                      <a href="#"><img src="assests/images/Logo-1.jpg"></a>
+                      <p class="paragraph">On the other hand, we denounce with righteous indignation and dislike men.</p>
+                      <h3 class="sub-heading">Interested To Work With Us</h3>
+                      <form class="footer-newslatter">
+                          <input type="text" name="Email" placeholder="Enter your email address" class="footer-newslatter-text">
+                          <input type="submit" value="Send" class="footer-newslatter-send paragraph">
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-1 company-grid">
+                  <h3 class="sub-heading footer-title">Company</h3>
+                  <ul class="footer-list">
+                      <li><a href="#" class="paragraph">About Us</a></li>
+                      <li><a href="#" class="paragraph">Portfolio</a></li>
+                      <li><a href="#" class="paragraph">Page</a></li>
+                      <li><a href="#" class="paragraph">FAQ</a></li>
+                      <li><a href="#" class="paragraph">Reviews</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-1 contact-grid">
+                  <h3 class="sub-heading footer-title">Support</h3>
+                  <ul class="footer-list">
+                      <li><a href="#" class="paragraph">Contact Us</a></li>
+                      <li><a href="#" class="paragraph">Privacy policy</a></li>
+                      <li><a href="#" class="paragraph">Tram of use</a></li>
+                      <li><a href="#" class="paragraph">Buy & Sell</a></li>
+                      <li><a href="#" class="paragraph">Reviews</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-1">
+                  <h3 class="sub-heading footer-title">Contact</h3>
+                  <ul class="footer-list">
+                      <li><a href="#" class="paragraph">Madani Ave, usa 1212</a></li>
+                      <li><a href="#" class="paragraph">+8802-55662000</a></li>
+                      <li><a href="#" class="paragraph">Email: www.uixzone12.com</a></li>
+                      <li><a href="#" class="paragraph">Buy & Sell</a></li>
+                      <li><a href="#" class="paragraph">Reviews</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row footer-bottom justify-content-center">
+              <div class="col-lg-8">
+                  <div class="row">
+                      <div class="col-md-2 privacy-policy-col d-flex align-items-center">
+                          <ul class="footer-bottom-link">
+                              <li class="d-inline-block"><a href="#" class="paragraph">Terms of Service</a></li>
+                              <li class="d-inline-block"><a href="#" class="paragraph">Privacy Policy</a></li>
+                              <li class="d-inline-block"><a href="#" class="paragraph">Security</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-2 social-icon-col">
+                          <ul class="footer-bottom-icon">
+                              <li class="d-inline-block"><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                              <li class="d-inline-block"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                              <li class="d-inline-block"><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-2 copyright-col d-flex align-items-center">
+                          <p class="copyright paragraph">© 2020 <a href="#">MotiveZone</a> All rights reserved.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+   <!--============================ END FOOTER SECTION ============================
+   -->
+
+
+   <!-- SCROLL TO TOP -->
+   <div class="scroll">
+      <a href="#header" class="scroll-top"><i class="far fa-angle-up"></i></a>
+   </div>
+
    <br>
    <br>
    <br>

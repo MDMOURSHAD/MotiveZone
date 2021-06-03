@@ -7,6 +7,7 @@
 	--color-1:#fff;
 	--color-2:#072753;
 	--color-3:#FF9C00;
+	--color-4:#28384E;
 	--fs-1:40px;
 	--fs-2:20px;
 	--fs-3:15px;
@@ -17,7 +18,8 @@
 /*====================================*/
 
 html{
-
+	scroll-behavior: smooth;
+	-webkit-scroll-behavior: smooth;
 }
 
 body{
@@ -61,8 +63,8 @@ textarea:focus{
 .heading{
 	font-size:var(--fs-1);
 	font-weight:700;
-	text-transform:capitalize;
 	color:var(--color-2);
+	margin-bottom:30px;
 }
 
 .sub-heading{
@@ -74,8 +76,18 @@ textarea:focus{
 
 .paragraph{
 	font-size:var(--fs-3);
-	color:var(--color-2);
+	color:var(--color-4);
 	font-weight:400;
+	line-height: 25px;
+}
+
+.paragraph-1 {
+    font-size: var(--fs-3);
+    color: var(--color-4);
+    font-weight: 400;
+    width: 55%;
+    line-height: 25px;
+    margin: auto;
 }
 
 .btn{
@@ -88,6 +100,16 @@ textarea:focus{
 	color:var(--color-1);
 	font-size:var(--fs-3);
 }
+
+.py-100{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+.mt-60{
+	margin-top:60px;
+}
+
 
 /*====================================*/
 /*-- HEADER SECTION CSS --*/
@@ -118,13 +140,432 @@ header nav{
 }
 
 /*==================*/
+/*-- MOBILE MENU --*/
+/*==================*/
+
+.mobile-menu{
+	display:none;
+}
+
+/*==================*/
+/*-- STICKY MENU --*/
+/*==================*/
+
+.sticky {
+    position: fixed;
+    z-index:9999;
+    background: #111;
+    top: 0;
+    width: 100%;
+    padding: 20px 0px;
+    left: 0;
+    transition:.3s ease-in;
+
+}
+
+/*==================*/
 /*-- HERO SECTION --*/
 /*==================*/
 
 .hero-content {
-    height: 120vh;
+    height: 100vh;
 }
 
 .hero-img {
-    transform: translate(50px);
+    transform: translate(60px,0px);
+}
+
+.hero-text-box .hero-title{
+	font-size:50px;
+	font-weight:700;
+	color:var(--color-1);
+}
+
+.hero-text-box .hero-desc {
+    color: var(--color-1) !important;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.red{
+	background:#111;
+	height:40px;
+}
+
+/*====================================*/
+/*-- SERVICE SECTION CSS --*/
+/*====================================*/
+
+.service-section{
+	overflow:hidden;
+	width:100%;
+}
+
+.service-item .icon-circle {
+    height:90px;
+    background: #FFFAF2;
+    width: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+
+}
+
+.service-item h3{
+	margin:25px 0px;
+}
+
+.service-item p{
+	margin:25px 0px 45px 0px;
+}
+
+.service-item a{
+	font-size:var(--fs-3);
+	color:#1B498A;
+	font-weight:500;
+}
+
+.service-item .right-arrow,
+.project-element a span{
+    margin-left: 10px;
+    vertical-align:middle;
+}
+
+
+
+/*====================================*/
+/*-- WE ARE HEAR SECTION CSS --*/
+/*====================================*/
+
+.we-are-hear {
+    overflow: hidden;
+    width: 100%;
+    background: url('../images/we-are-here-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.we-are-hear-text p {
+    width: 88%;
+}
+
+.we-are-hear-text span{
+	margin-top:30px;
+}
+
+.we-are-hear-img{
+	transform: translate(60px,0px) !important;
+}
+
+/*====================================*/
+/*-- WORK WITH US SECTION CSS --*/
+/*====================================*/
+
+.work-with-us{
+	overflow:hidden;
+	width:100%;
+}
+
+.work-with-us-img {
+    transform: translate(-125px,0px) !important;
+}
+
+.work-with-us-text p{
+	width:89%;
+}
+
+.work-with-us-text span{
+	margin-top:30px;
+}
+
+.work-with-us .newslatter-form{
+	margin-top:50px;
+	width:90%;
+	border:1px solid #EDE5D9;
+	padding:5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.newslatter-form-text {
+    width: 79%;
+    padding: 10px;
+    font-size: var(--fs-3);
+    font-weight: 400;
+}
+
+.newslatter-form-text::placeholder{
+	color:#525D6C;
+}
+
+.newslatter-form-send{
+	padding:20px 0px !important;
+	width:20%;
+}
+
+/*====================================*/
+/*--  PROJECT SECTION CSS --*/
+/*====================================*/
+
+.project-section {
+    width: 100%;
+    background: url(../images/latest-project-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-title h2,
+.project-title p{
+	color:var(--color-1);
+}
+
+.project-element h3 {
+    text-transform: none;
+    color:var(--color-1);
+    margin-top:30px;
+}
+
+.project-element P {
+    color: var(--color-1);
+    margin: 25px 0px;
+    width: 93%;
+}
+
+.project-element a {
+    font-weight: 500;
+    font-size: var(--fs-3);
+    color: var(--color-3);
+}
+
+
+
+/*====================================*/
+/*-- START TESTIOMONIAL SECTION --*/
+/*====================================*/
+
+.testimonial-section{
+	overflow:hidden;
+	width:100%;
+}
+
+.testimonial-section .col-md-4 {
+    flex: 0 0 auto;
+    width: 30.333333%;
+}
+
+.testimonial-section .col-md-5 {
+    flex: 0 0 auto;
+    width: 44.666667%;
+}
+
+.review-person-image img {
+    height: 370px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.review-person-identity h3{
+	text-transform:none !important;
+}
+
+.review-person-identity span {
+    color: var(--color-2);
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.review-person-identity p {
+    line-height: 30px;
+    font-size: 17px;
+}
+
+/*==================*/
+/*-- SWIPER SLIDER --*/
+/*==================*/
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+ }
+
+/*====================================*/
+/*-- CLIENTS SECTION CSS --*/
+/*====================================*/
+
+.clients-section {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+/*====================================*/
+/*-- FOOTER SECTION CSS --*/
+/*====================================*/
+
+.footer-section {
+    background: url('../images/footer-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0px;
+}
+
+.footer-section .col-md-3 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+.footer-desc p {
+    color: #A9B2BC;
+    margin-top: 3px;
+    width: 67%;
+    margin-bottom: 35px;
+}
+
+.footer-desc h3{
+	font-size:18px;
+	color:var(--color-1);
+	margin-bottom:20px;
+}
+
+.footer-newslatter{
+	width:100%;
+}
+
+.footer-newslatter .footer-newslatter-text {
+    padding: 20px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 73%;
+}
+
+.footer-newslatter .footer-newslatter-text::placholder{
+	color:#717983;
+}
+
+.footer-newslatter .footer-newslatter-send {
+    font-weight: 700 !important;
+    color: var(--color-1) !important;
+    background: #1B498A;
+    text-align: center;
+    padding: 16px 0px;
+    margin-left: -4px;
+    width: 25%;
+    cursor: pointer;
+}
+
+.footer-section .col-md-1 {
+    flex: 0 0 auto;
+    width: 14.333333%;
+}
+
+.footer-section .company-grid {
+    width: 10.333333%;
+}
+
+.footer-section .contact-grid {
+    width: 11.33333%;
+}
+
+.footer-title{
+	color:var(--color-1);
+	margin-bottom:30px;
+}
+
+.footer-list li {
+    line-height: 30px;
+}
+
+.footer-list li a{
+	color:#A9B2BC !important;
+
+}
+
+/*==================*/
+/*-- FOOTER BOTTOM --*/
+/*==================*/
+
+.footer-bottom {
+    margin-top: 150px;
+    border-top: 1px solid #1E2B3B;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.privacy-policy-col {
+    width: 40%;
+}
+
+.footer-bottom-link li{
+	margin-right:20px;
+}
+
+.footer-bottom-link li a{
+	color:#A9B2BC;
+	font-size:14px;
+}
+
+.social-icon-col {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-icon li a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+  	-webkit-border-radius: 50%;
+	border-radius: 50%;
+    color: var(--color-1);
+}
+
+.footer-bottom-icon li:not(:last-child){
+	margin-right:10px;
+}
+
+.facebook {
+    background: #4267B2 !important;
+}
+
+.twitter {
+    background: #1DA1F2 !important;
+}
+
+.youtube {
+    background: #ff0000 !important;
+}
+
+.copyright-col {
+    width: 30%;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #A9B2BC;
+}
+
+.copyright a{
+	color:#FF9C00 !important;
+}
+
+/*==================*/
+/*-- SCROLL TO TOP --*/
+/*==================*/
+
+.scroll .scroll-top {
+    background: tomato;
+    color: #673ab7;
+    height: 50px;
+    position: fixed;
+    font-size: 4px;
+    bottom: 30px;
+    line-height: 50px;
+    width: 50px;
+    right: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
