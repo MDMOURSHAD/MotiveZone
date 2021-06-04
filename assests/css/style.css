@@ -354,7 +354,7 @@ header nav{
 
 
 /*====================================*/
-/*-- START TESTIOMONIAL SECTION --*/
+/*-- TESTIOMONIAL SECTION CSS --*/
 /*====================================*/
 
 .testimonial-section{
@@ -362,12 +362,12 @@ header nav{
 	width:100%;
 }
 
-.testimonial-section .col-md-4 {
+.testimonial-section .col-xxl-4 {
     flex: 0 0 auto;
     width: 30.333333%;
 }
 
-.testimonial-section .col-md-5 {
+.testimonial-section .col-xxl-5 {
     flex: 0 0 auto;
     width: 44.666667%;
 }
@@ -433,6 +433,7 @@ header nav{
     right: auto !important;
     left: 75px !important;
 }
+
 /*====================================*/
 /*-- CLIENTS SECTION CSS --*/
 /*====================================*/
@@ -498,17 +499,18 @@ header nav{
     cursor: pointer;
 }
 
-.footer-section .col-md-1 {
-    flex: 0 0 auto;
-    width: 14.333333%;
-}
 
 .footer-section .company-grid {
     width: 10.333333%;
 }
 
-.footer-section .contact-grid {
+.footer-section .support-grid {
     width: 11.33333%;
+}
+
+.footer-section .contact-grid {
+    flex: 0 0 auto;
+    width: 14.333333%;
 }
 
 .footer-title{

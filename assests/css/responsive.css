@@ -43,6 +43,22 @@
     transform: translate(0px,0px)!important;
 }
 
+/*====================================*/
+/*-- WE ARE HEAR SECTION CSS --*/
+/*====================================*/
+
+.we-are-hear-img {
+    transform: translate(0px,0px) !important;
+}
+
+/*====================================*/
+/*-- WORK WITH US SECTION CSS --*/
+/*====================================*/
+
+.work-with-us-img {
+    transform: translate(0px,0px) !important;
+}
+
 }
 
 
@@ -57,17 +73,59 @@
 /*====================================*/
 
 .hero-content {
-	height: 120vh !important;
+	height: 90vh !important;
 }
 
 .hero-text-box .hero-desc {
     margin-right: 30px;
 }
 
-.hero-img {
-    transform: translate(0px,0px) !important;
+/*====================================*/
+/*-- TESTIOMONIAL SECTION CSS --*/
+/*====================================*/
+
+.testimonial-section .col-xxl-4{
+    width: 41.6666666667% !important;
 }
 
+/*====================================*/
+/*-- CLIENTS SECTION CSS --*/
+/*====================================*/
+
+.clients-section .col-xl-2 {
+    width: 19.10% !important;
+}
+
+/*====================================*/
+/*-- FOOTER SECTION CSS --*/
+/*====================================*/
+
+.footer-section .col-md-3 {
+    width: 35% !important;
+}
+
+.footer-section .company-grid {
+    width: 12.333333% !important;
+}
+
+.footer-section .support-grid {
+    width: 13.33333% !important;
+}
+
+.footer-section .contact-grid {
+    width: 15.333333% !important;
+}
+
+/*==================*/
+/*-- FOOTER BOTTOM --*/
+/*==================*/
+
+.footer-bottom .col-lg-8 {
+    width: 76.666667%;
+}
+
+.copyright {
+    text-align: center;
 }
 
 
@@ -78,12 +136,67 @@
 /*-- REUSABLE COMPONENTS --*/
 /*============================*/
 
+.py-lg-80{
+    padding-top:80px;
+    padding-bottom:80px;
+}
 /*====================================*/
 /*-- HEADER SECTION CSS --*/
 /*====================================*/
 
 .hero-content {
     height: 80vh !important;
+}
+
+/*====================================*/
+/*-- TESTIOMONIAL SECTION CSS --*/
+/*====================================*/
+
+.testimonial-section .col-xxl-4 {
+    width: 50% !important;
+}
+
+.testimonial-section .col-xxl-5 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+/*====================================*/
+/*-- CLIENTS SECTION CSS --*/
+/*====================================*/
+
+.clients-section {
+    padding-bottom: 35px;
+}
+
+.clients-section .col-xl-2 {
+    width: 25% !important;
+}
+
+/*====================================*/
+/*-- FOOTER SECTION CSS --*/
+/*====================================*/
+
+.footer-section{
+    padding-bottom:0px !important; 
+}
+
+.footer-section .col-md-3 {
+    width: 40% !important;
+}
+
+.footer-section .company-grid,
+.footer-section .support-grid,
+.footer-section .contact-grid {
+    width: 20% !important;
+}
+
+/*==================*/
+/*-- FOOTER BOTTOM --*/
+/*==================*/
+
+.footer-bottom {
+    margin-top: 60px !important;
 }
 
 }
@@ -164,7 +277,6 @@
 .mobile-menu-item ul li a{
 	color:#ddd;
 	font-size:30px;
-
 }
 
 }
