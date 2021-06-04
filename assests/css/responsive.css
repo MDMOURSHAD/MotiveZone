@@ -35,6 +35,10 @@
 /*-- HERO SECTION --*/
 /*==================*/
 
+.hero-text-box {
+    margin-right:50px;
+}
+
 .hero-img {
     transform: translate(0px,0px)!important;
 }
