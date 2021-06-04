@@ -1,42 +1,13 @@
 
-$(document).ready(function(){
+// PRELOADER 
 
-	// SWIPER JS
+function loading(){
 
-     var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-     
+  var loading = document.getElementsByClassName('preloader');
 
-	// STICKY MENU 
+  loading[0].style.display = "none";
 
-	$(window).scroll(function(){
-
-		if($(this).scrollTop() > 100){
-
-			$('.nav').addClass('sticky');
-		}
-
-		else{
-			$('.nav').removeClass('sticky');
-		}
-	});
-	
-});
-
+}
 
 // MOBILE MENU 
 
@@ -51,3 +22,56 @@ function closeNav(){
 // WOW JS
 
 new WOW().init();
+
+$(document).ready(function(){
+
+	// STICKY MENU 
+
+	$(window).scroll(function(){
+
+		if($(this).scrollTop() > 100){
+
+			$('.nav').addClass('sticky');
+	}
+
+		else{
+			$('.nav').removeClass('sticky');
+	}
+
+	});
+
+  // TOP TO SCROLL 
+
+  $(window).scroll(function(){
+
+  if($(this).scrollTop() > 100){
+
+    $('.scroll-top').fadeIn();
+
+  }
+
+  else{
+
+    $('.scroll-top').fadeOut();
+
+  }
+
+
+  });
+
+  // SWIPER JS
+
+   var swiper = new Swiper('.swiper-container', {
+    
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+
+});

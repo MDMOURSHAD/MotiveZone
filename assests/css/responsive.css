@@ -1,4 +1,12 @@
 
+@media(max-width:1799px){
+
+}
+
+@media(max-width:1599px){
+    
+}
+
 
 @media (max-width: 1399px) {
 
@@ -161,7 +169,7 @@
 
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
 
 /*============================*/
 /*-- REUSABLE COMPONENTS --*/
