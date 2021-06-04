@@ -26,6 +26,19 @@
 
 @media(max-width:1599px){
 
+/*============================*/
+/*-- REUSABLE COMPONENTS --*/
+/*============================*/
+
+
+/*==================*/
+/*-- HERO SECTION --*/
+/*==================*/
+
+.hero-img {
+    transform: translate(0px,0px)!important;
+}
+
 }
 
 
