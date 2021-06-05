@@ -314,6 +314,7 @@ header nav{
 .newslatter-form-send{
 	padding:20px 0px !important;
 	width:20%;
+    cursor: pointer;
 }
 
 /*====================================*/
@@ -493,7 +494,7 @@ header nav{
     color: var(--color-1) !important;
     background: #1B498A;
     text-align: center;
-    padding: 16px 0px;
+    padding: 17px 0px;
     margin-left: -4px;
     width: 25%;
     cursor: pointer;
@@ -553,8 +554,8 @@ header nav{
 
 .social-icon-col {
     width: 25%;
-    display: flex;
-    justify-content: center;
+  /*  display: flex;
+    justify-content: center;*/
 }
 
 .footer-bottom-icon li a {
@@ -603,6 +604,7 @@ header nav{
 
 .scroll .scroll-top {
     background: tomato;
+    z-index:1;
     color: #673ab7;
     height: 50px;
     position: fixed;

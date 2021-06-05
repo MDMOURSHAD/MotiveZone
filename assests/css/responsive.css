@@ -199,6 +199,10 @@
     margin-top: 60px !important;
 }
 
+.footer-bottom .col-xl-8 {
+    width: 100%;
+}
+
 }
 
 @media (max-width: 991px) {
@@ -339,8 +343,6 @@
     width: 78%;
 }
 
-
-
 /*====================================*/
 /*--  PROJECT SECTION CSS --*/
 /*====================================*/
@@ -367,6 +369,18 @@
     width: 100%;
 }
 
+/*==================*/
+/*-- FOOTER BOTTOM --*/
+/*==================*/
+
+.social-icon-col {
+    width: 40%;
+}
+.privacy-policy-col {
+    width: 30%;
+}
+
+
 }
 
 @media (max-width: 767px) {
@@ -375,9 +389,27 @@
 /*-- REUSABLE COMPONENTS --*/
 /*============================*/
 
-.mt-sm-30{
-	margin-top:30px;
+.py-sm-60{
+    padding-top:60px !important;
+    padding-bottom:60px !important;
 }
+
+.mt-sm-40{
+    margin-top:40px;
+}
+
+.mt-sm-30{
+    margin-top:30px;
+}
+
+.section-title{
+    width:100% !important;
+}
+
+.section-title p {
+    width: 100%;
+}
+
 
 /*====================================*/
 /*-- HEADER SECTION CSS --*/
@@ -402,9 +434,84 @@
 }
 
 .hero-img {
-    padding-bottom: 130px;
+    padding-bottom: 60px;
 }
 
+/*==================*/
+/*-- HERO SECTION --*/
+/*==================*/
+
+.hero-text-box .hero-title {
+    width: 100%;
+}
+
+/*====================================*/
+/*-- SERVICE SECTION CSS --*/
+/*====================================*/
+
+.service-section{
+    padding-top:0px !important;
+    padding-bottom: 60px;
+}
+
+.service-item p {
+    margin: 25px 0px 30px 0px;
+}
+
+/*====================================*/
+/*-- WE ARE HEAR SECTION CSS --*/
+/*====================================*/
+
+.we-are-hear-text span {
+    margin-top: 20px;
+}
+
+/*====================================*/
+/*-- WORK WITH US SECTION CSS --*/
+/*====================================*/
+
+.work-with-us-text span {
+    margin-top: 20px;
+}
+
+.work-with-us .newslatter-form {
+    margin-top: 35px !important;
+}
+
+/*====================================*/
+/*--  PROJECT SECTION CSS --*/
+/*====================================*/
+
+.project-element P {
+    margin: 20px 0px;
+}
+
+
+/*====================================*/
+/*-- FOOTER SECTION CSS --*/
+/*====================================*/
+
+.footer-section {
+    padding-top: 60px !important;
+}
+
+.footer-section .col-md-3 {
+    width: 100% !important;
+}
+
+.footer-section .company-grid,
+.footer-section .support-grid, 
+.footer-section .contact-grid {
+    width: 33.33333% !important;
+}
+
+/*==================*/
+/*-- FOOTER BOTTOM --*/
+/*==================*/
+
+.footer-bottom {
+    margin-top: 40px !important;
+}
 
 }
 
@@ -414,7 +521,22 @@
 /*-- REUSABLE COMPONENTS --*/
 /*============================*/
 
+.py-xs-50{
+    padding-top:50px !important;
+    padding-bottom:50px !important;
+}
 
+.btn {
+    padding: 17px 35px;
+}
+
+.heading {
+    margin-bottom: 20px;
+}
+
+.mt-xs-30{
+    margin-top:30px !important;
+}
 /*====================================*/
 /*-- HEADER SECTION CSS --*/
 /*====================================*/
@@ -423,14 +545,18 @@
 	padding:16px 20px;
 }
 
+.sticky{
+    padding:10px 0px !important;
+}
+
 /*==================*/
 /*-- MOBILE MENU --*/
 /*==================*/
 
 .mobile-menu {
     display: block;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bars-icon a {
@@ -449,19 +575,80 @@
     font-size: 25px;
 }
 
+/*==================*/
+/*-- HERO SECTION --*/
+/*==================*/
+
+.hero-text-box .hero-title {
+    font-size: 35px;
+}
+
+.hero-text-box .hero-desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 /*====================================*/
-/*-- HEADER SECTION CSS --*/
+/*-- SERVICE SECTION CSS --*/
 /*====================================*/
 
+.service-section {
+    padding-top:0px !important;
+}
 
 /*====================================*/
-/*-- HEADER SECTION CSS --*/
+/*-- WORK WITH US SECTION CSS --*/
 /*====================================*/
 
+.newslatter-form-text {
+    width: 73%;
+}
+
+.newslatter-form-send {
+    width: 25%;
+}
 
 /*====================================*/
-/*-- HEADER SECTION CSS --*/
+/*-- FOOTER SECTION CSS --*/
 /*====================================*/
+
+.footer-section {
+    padding-top: 50px !important;
+}
+
+.footer-desc p {
+    width: 75%;
+}
+
+.footer-section .company-grid,
+.footer-section .support-grid,
+.footer-section .contact-grid {
+    width: 100% !important;
+}
+
+.footer-title {
+    margin-bottom: 15px;
+}
+
+/*==================*/
+/*-- FOOTER BOTTOM --*/
+/*==================*/
+
+.footer-bottom {
+    margin-top: 30px !important;
+    padding-top:30px !important;
+}
+
+.privacy-policy-col,
+.social-icon-col,
+.copyright-col{
+    width: 100%;
+}
+
+.copyright-col {
+    justify-content: center !important;
+
+}
+
 }
 
