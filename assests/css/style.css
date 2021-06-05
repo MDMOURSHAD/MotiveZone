@@ -305,6 +305,7 @@ header nav{
     padding: 10px;
     font-size: var(--fs-3);
     font-weight: 400;
+    background: transparent;
 }
 
 .newslatter-form-text::placeholder{

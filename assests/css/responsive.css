@@ -259,8 +259,8 @@
     left: 0;
     top: 0;
     width: 0%;
-    overflow: hidden;
-    z-index: 9999;
+    overflow: scroll;
+    z-index: 999999999;
     position: fixed;
     width: 0%;
     background: #111;
