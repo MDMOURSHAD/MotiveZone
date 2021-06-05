@@ -120,7 +120,7 @@
 /*-- FOOTER BOTTOM --*/
 /*==================*/
 
-.footer-bottom .col-lg-8 {
+.footer-bottom .col-xl-8 {
     width: 76.666667%;
 }
 
@@ -207,6 +207,17 @@
 /*-- REUSABLE COMPONENTS --*/
 /*============================*/
 
+.heading {
+    font-size: 35px !important;
+}
+
+.mt-md-40{
+    margin-top:40px;
+}
+
+.section-title p {
+    width: 90%;
+}
 /*====================================*/
 /*-- HEADER SECTION CSS --*/
 /*====================================*/
@@ -279,6 +290,83 @@
 	font-size:30px;
 }
 
+/*==================*/
+/*-- HERO SECTION --*/
+/*==================*/
+
+.hero-section {
+    padding-bottom: 120px !important;
+}
+
+.hero-content {
+    height: auto !important;
+}
+
+.hero-text-box {
+    margin-right: 0px;
+}
+
+.hero-text-box .hero-title {
+    font-size: 45px;
+    width: 80%;
+}
+
+.hero-text-box .hero-desc {
+    margin-right: 100px;
+}
+
+/*====================================*/
+/*-- WE ARE HEAR SECTION CSS --*/
+/*====================================*/
+
+.we-are-hear-text p {
+    width: 100% !important;
+}
+
+/*====================================*/
+/*-- WORK WITH US SECTION CSS --*/
+/*====================================*/
+
+.work-with-us-text p {
+    width: 100%;
+}
+
+.work-with-us .newslatter-form {
+    width: 100%;
+}
+
+.newslatter-form-text {
+    width: 78%;
+}
+
+
+
+/*====================================*/
+/*--  PROJECT SECTION CSS --*/
+/*====================================*/
+
+.project-element P {
+    color: var(--color-1);
+    margin: 25px 0px;
+    width: 100%;
+}
+
+/*====================================*/
+/*-- TESTIOMONIAL SECTION CSS --*/
+/*====================================*/
+
+.testimonial-section .col-xxl-4 {
+    width: 100% !important;
+}
+
+.review-person-image img {
+    height: auto;
+}
+
+.testimonial-section .col-xxl-5 {
+    width: 100%;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -316,6 +404,7 @@
 .hero-img {
     padding-bottom: 130px;
 }
+
 
 }
 
