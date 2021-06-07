@@ -258,17 +258,16 @@
     height: 100%;
     left: 0;
     top: 0;
-    width: 0%;
-    overflow: scroll;
+    overflow: hidden;
     z-index: 999999999;
     position: fixed;
-    width: 0%;
+    width: 100% !important;
     background: #111;
-    transition:.5s ease-in-out;
-    -webkit-transition:.5s ease-in-out;
-    -moz-transition:.5s ease-in-out;
-    -ms-transition:.5s ease-in-out;
-    -o-transition:.5s ease-in-out;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
 }
 
 .overlay .close-icon {
@@ -367,6 +366,14 @@
 
 .testimonial-section .col-xxl-5 {
     width: 100%;
+}
+
+.review-person-identity p {
+    padding-bottom: 70px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    bottom: 0px !important;
 }
 
 /*==================*/
@@ -485,7 +492,6 @@
 .project-element P {
     margin: 20px 0px;
 }
-
 
 /*====================================*/
 /*-- FOOTER SECTION CSS --*/
@@ -606,6 +612,14 @@
 
 .newslatter-form-send {
     width: 25%;
+}
+
+/*====================================*/
+/*-- TESTIOMONIAL SECTION CSS --*/
+/*====================================*/
+
+.review-person-identity{
+    text-align:justify;
 }
 
 /*====================================*/
