@@ -1,5 +1,5 @@
 
-// PRELOADER 
+//-- PRELOADER --//
 
 function loading(){
 
@@ -9,7 +9,7 @@ function loading(){
 
 }
 
-// MOBILE MENU 
+//-- MOBILE MENU --//
 
 function openNav(){
 	document.getElementById("mynav").style.width = "100%";
@@ -19,13 +19,13 @@ function closeNav(){
 	document.getElementById("mynav").style.width = "0%";
 }
 
-// WOW JS
+//-- WOW JS --//
 
 new WOW().init();
 
 $(document).ready(function(){
 
-	// STICKY MENU 
+	//-- STICKY MENU --//
 
 	$(window).scroll(function(){
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 	});
 
-  // TOP TO SCROLL 
+  //-- TOP TO SCROLL --//
 
   $(window).scroll(function(){
 
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
   });
 
-  // SWIPER JS
+  //-- SWIPER JS --//
 
    var swiper = new Swiper('.swiper-container', {
     
