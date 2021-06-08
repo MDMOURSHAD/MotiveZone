@@ -261,7 +261,7 @@
     overflow: hidden;
     z-index: 999999999;
     position: fixed;
-    width: 100% !important;
+    width: 0%;
     background: #111;
     transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;

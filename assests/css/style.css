@@ -655,8 +655,10 @@ header nav{
     line-height: 40px;
     text-align: center;
     height: 40px;
+    display: none;
     width: 40px;
     font-size: 25px !important;
+    z-index: 999;
     background: #f54748;
     color: #fff;
 }
