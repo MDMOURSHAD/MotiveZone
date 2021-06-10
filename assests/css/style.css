@@ -668,15 +668,3 @@ header nav {
     background: #f54748;
     color: #fff;
 }
-
-.scroll-top:hover{
-    transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    transition:transform .5s ease-in;
-    -webkit-transition:transform .5s ease-in;
-    -moz-transition:transform .5s ease-in;
-    -o-transition:transform .5s ease-in;
-}
