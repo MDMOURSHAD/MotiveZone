@@ -551,6 +551,10 @@
 	padding:16px 20px;
 }
 
+.logo-area img {
+    width: 110px !important;
+}
+
 .sticky{
     padding:10px 0px !important;
 }
@@ -663,6 +667,15 @@
     justify-content: center !important;
 
 }
+
+/*==================*/
+/*-- SCROLL TO TOP --*/
+/*==================*/
+
+.scroll-top {
+    right: 25px !important;
+}
+
 
 }
 

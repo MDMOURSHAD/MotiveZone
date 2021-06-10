@@ -131,11 +131,13 @@ header {
     background: url('../images/Slider.png');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden !important;
     background-position: center center;
 }
 
-header nav{
-    padding:30px 0px;
+header nav {
+    padding: 30px 0px;
+    overflow: hidden !important;
 }
 
 /*==================*/
@@ -160,6 +162,7 @@ header nav{
 }
 
 /* Sweep To Right */
+
 .hvr-sweep-to-right {
   display: inline-block;
   vertical-align: middle;
@@ -216,6 +219,8 @@ header nav{
     padding: 20px 0px;
     left: 0;
     transition:.3s ease-in;
+    -webkit-transition:.3s ease-in;
+    overflow:hidden !important;
 
 }
 
@@ -223,6 +228,9 @@ header nav{
 /*-- HERO SECTION --*/
 /*==================*/
 
+.hero-section{
+    overflow:hidden !important;
+}
 .hero-content {
     height: 100vh;
 }
@@ -253,7 +261,7 @@ header nav{
 /*====================================*/
 
 .service-section{
-    overflow:hidden;
+    overflow:hidden !important;
     width:100%;
 }
 
@@ -287,14 +295,12 @@ header nav{
     vertical-align:middle;
 }
 
-
-
 /*====================================*/
 /*-- WE ARE HEAR SECTION CSS --*/
 /*====================================*/
 
 .we-are-hear {
-    overflow: hidden;
+    overflow: hidden !important;
     width: 100%;
     background: url('../images/we-are-here-bg.jpg');
     background-size: cover;
@@ -319,7 +325,7 @@ header nav{
 /*====================================*/
 
 .work-with-us{
-    overflow:hidden;
+    overflow:hidden !important;
     width:100%;
 }
 
@@ -372,6 +378,7 @@ header nav{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow:hidden !important;
 }
 
 .project-title h2,
@@ -404,7 +411,7 @@ header nav{
 /*====================================*/
 
 .testimonial-section{
-    overflow:hidden;
+    overflow:hidden !important;
     width:100%;
 }
 
@@ -488,6 +495,7 @@ header nav{
 .clients-section {
     width: 100%;
     padding-bottom: 60px;
+    overflow:hidden !important;
 }
 
 /*====================================*/
@@ -500,6 +508,7 @@ header nav{
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 0px;
+    overflow:hidden !important;
 }
 
 .footer-section .col-md-3 {
@@ -545,7 +554,6 @@ header nav{
     width: 25%;
     cursor: pointer;
 }
-
 
 .footer-section .company-grid {
     width: 10.333333%;
@@ -600,8 +608,6 @@ header nav{
 
 .social-icon-col {
     width: 25%;
-  /*  display: flex;
-    justify-content: center;*/
 }
 
 .footer-bottom-icon li a {
@@ -658,7 +664,7 @@ header nav{
     display: none;
     width: 40px;
     font-size: 25px !important;
-    z-index: 999;
+    z-index: 1;
     background: #f54748;
     color: #fff;
 }
