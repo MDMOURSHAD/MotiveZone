@@ -11,13 +11,23 @@ function loading(){
 
 //-- MOBILE MENU --//
 
-function openNav(){
-	document.getElementById("mynav").style.width = "100%";
+const menuIcon = document.querySelector('.hamburger-menu');
+const navlist = document.querySelector('.nav-list');
+
+menuIcon.addEventListener("click", () => {
+
+  menuIcon.classList.toggle('change');
+  navlist.classList.toggle('slide-menu');
+  
+});
+
+function myFunction(){
+
+  menuIcon.classList.remove('change');
+  navlist.classList.remove('slide-menu');
+  
 }
 
-function closeNav(){
-	document.getElementById("mynav").style.width = "0%";
-}
 
 //-- WOW JS --//
 

@@ -119,7 +119,7 @@ textarea:focus{
     position: fixed;
     z-index: 999999;
     height: 100vh;
-    background: #fff url('../images/Gear-0.2s-200px.gif') no-repeat center;
+    background: #fff url('../images/Pulse-2.9s-157px.gif') no-repeat center;
     width: 100%;
 }
 
@@ -175,6 +175,7 @@ header nav {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-sweep-to-right:before {
   content: "";
   position: absolute;
@@ -213,7 +214,7 @@ header nav {
 .sticky {
     position: fixed;
     z-index:9999;
-    background: #111;
+    background: rgba(0,0,0,.8);
     top: 0;
     width: 100%;
     padding: 20px 0px;
@@ -496,6 +497,10 @@ header nav {
     width: 100%;
     padding-bottom: 60px;
     overflow:hidden !important;
+}
+
+.clients-section .col-xl-2 {
+    width: 25% !important;
 }
 
 /*====================================*/

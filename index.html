@@ -35,7 +35,7 @@
    	<!-- NAV -->
       <nav class="nav">
      	    <div class="container">
-     		     <div class="nav-bar d-flex justify-content-lg-between justify-content-xxl-around align-items-center">
+     		     <div class="nav-bar d-flex justify-content-lg-between justify-content-xxl-around justify-content-between align-items-center">
      			      <!-- LOGO -->
      			      <div class="logo-area">
      				       <a href="#"><img src="assests/images/logo.jpg" class="d-block" alt="nav-logo"></a>
@@ -50,30 +50,28 @@
      					        <li class="d-inline-block capitalize"><a href="#contact-us">Contact US</a></li>
      				       </ul>
      			      </div>
-                <!-- MOBILE MENU -->
-                <div class="mobile-menu">
-                    <div class="bars-icon">
-                        <a href="javascript:void(0)" class="d-flex align-items-center" onclick="openNav()"><i class="fas fa-bars"></i></a>
-                    </div>
-                    <div class="overlay" id="mynav">
-                        <div class="close-icon text-end">
-                            <a href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a>
-                        </div>
-                        <div class="mobile-menu-item">
-                            <ul>
-                                <li class="d-block capitalize text-center"><a href="#header" onclick="closeNav()">Home</a></li>
-                                <li class="d-block capitalize text-center"><a href="#service" onclick="closeNav()">Our Work</a></li>
-                                <li class="d-block capitalize text-center"><a href="#about-us" onclick="closeNav()">About US</a></li>
-                                <li class="d-block capitalize text-center"><a href="#review" onclick="closeNav()">Review</a></li>
-                                <li class="d-block capitalize text-center"><a href="#contact-us" onclick="closeNav()">Contact US</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
      			      <!-- NAV BTN -->
      			      <div class="nav-btn">
      				       <a href="javaScript:void(0)" class="btn capitalize hvr-sweep-to-right">Say Hi</a>
      			      </div>
+                <!-- MOBILE MENU -->
+                <div class="mobile-menu">
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+                    <div class="nav-list">
+                        <ul>
+                            <li><a href="#header" onclick="myFunction()">home</a></li>
+                            <li><a href="#service" onclick="myFunction()">Our Work</a></li>
+                            <li><a href="#about-us" onclick="myFunction()">About US</a></li>
+                            <li><a href="#review" onclick="myFunction()">Review</a></li>
+                            <li><a href="#contact-us" onclick="myFunction()">Contact US</a></li>
+                            <li><a href="javaScript:void(0)" class="btn capitalize hvr-sweep-to-right">Say Hi</a></li>
+                        </ul>
+                    </div>
+                </div>
      		       </div>
      	      </div>
         </nav>
