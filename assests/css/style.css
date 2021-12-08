@@ -110,6 +110,29 @@ textarea:focus{
     margin-top:60px;
 }
 
+.btn-1{
+    transition: .3s ease !important;
+}
+
+.btn-1:hover{
+    color: var(--color-3) !important;
+}
+
+.btn-2{
+    transition: .3s ease !important;
+}
+
+.btn-2:hover{
+    color: #1b498a !important;
+}
+
+.btn-3{
+    transition: .3s ease;
+}
+
+.btn-3:hover{
+    color:var(--color-1);
+}
 
 /*==================*/
 /*-- PRELOADER --*/
@@ -119,7 +142,7 @@ textarea:focus{
     position: fixed;
     z-index: 999999;
     height: 100vh;
-    background: #fff url('../images/Pulse-2.9s-157px.gif') no-repeat center;
+    background: #fff url('../images/Dual Ring-2.9s-98px.gif') no-repeat center;
     width: 100%;
 }
 
@@ -213,16 +236,15 @@ header nav {
 
 .sticky {
     position: fixed;
-    z-index:9999;
+    z-index: 9999;
     background: rgba(0,0,0,.8);
     top: 0;
     width: 100%;
-    padding: 20px 0px;
+    padding: 10px 0px;
     left: 0;
-    transition:.3s ease-in;
-    -webkit-transition:.3s ease-in;
-    overflow:hidden !important;
-
+    transition: .3s ease-in;
+    -webkit-transition: .5s ease-in;
+    overflow: hidden !important;
 }
 
 /*==================*/
@@ -554,7 +576,7 @@ header nav {
     color: var(--color-1) !important;
     background: #1B498A;
     text-align: center;
-    padding: 17px 0px;
+    padding: 16px 0px;
     margin-left: -4px;
     width: 25%;
     cursor: pointer;
@@ -670,6 +692,6 @@ header nav {
     width: 40px;
     font-size: 25px !important;
     z-index: 1;
-    background: #f54748;
+    background: var(--color-3);
     color: #fff;
 }
