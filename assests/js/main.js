@@ -77,6 +77,7 @@ $(document).ready(function(){
         delay: 2500,
         disableOnInteraction: false,
       },
+      speed:1200,
       loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
